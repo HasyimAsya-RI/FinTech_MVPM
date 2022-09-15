@@ -1,0 +1,95 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:app               = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools             = "http://schemas.android.com/tools"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "match_parent"
+    android:orientation     = "vertical"
+    tools:context           = ".MainActivity">
+
+    <TextView
+        android:layout_width        = "wrap_content"
+        android:layout_height       = "wrap_content"
+        android:layout_marginTop    = "50dp"
+        android:layout_marginBottom = "50dp"
+        android:layout_gravity      = "center_horizontal"
+        android:text                = "Kalkulator"
+        android:textSize            = "30dp"
+        android:textStyle           = "bold"
+        android:textColor           = "@color/black" />
+
+    <EditText
+        android:id                  = "@+id/eTxt_angkaPertama"
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:layout_margin       = "15dp"
+        android:inputType           = "numberDecimal"
+        android:hint                = "Masukkan Angka Pertama" />
+    <EditText
+        android:id                  = "@+id/eTxt_angkaKedua"
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:layout_margin       = "15dp"
+        android:inputType           = "numberDecimal"
+        android:hint                = "Masukkan Angka Kedua" />
+
+    <LinearLayout
+        android:layout_width        = "wrap_content"
+        android:layout_height       = "wrap_content"
+        android:layout_marginTop    = "15dp"
+        android:layout_gravity      = "center_horizontal"
+        android:orientation         = "horizontal">
+        <Button
+            android:id                  = "@+id/btn_tambah"
+            android:layout_width        = "50dp"
+            android:layout_height       = "50dp"
+            android:text                = "+"
+            android:textSize            = "20dp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/black"
+            android:backgroundTint      = "#C0C0C0" />
+        <Button
+            android:id                  = "@+id/btn_kurang"
+            android:layout_width        = "50dp"
+            android:layout_height       = "50dp"
+            android:layout_marginLeft   = "15dp"
+            android:text                = "-"
+            android:textSize            = "20dp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/black"
+            android:backgroundTint      = "#C0C0C0" />
+        <Button
+            android:id                  = "@+id/btn_kali"
+            android:layout_width        = "50dp"
+            android:layout_height       = "50dp"
+            android:layout_marginLeft   = "15dp"
+            android:text                = "x"
+            android:textAllCaps         = "false"
+            android:textSize            = "20dp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/black"
+            android:backgroundTint      = "#C0C0C0" />
+        <Button
+            android:id                  = "@+id/btn_bagi"
+            android:layout_width        = "50dp"
+            android:layout_height       = "50dp"
+            android:layout_marginLeft   = "15dp"
+            android:text                = "÷"
+            android:textSize            = "20dp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/black"
+            android:backgroundTint      = "#C0C0C0" />
+    </LinearLayout>
+
+    <TextView
+        android:id                  = "@+id/txt_hasil"
+        android:layout_width        = "wrap_content"
+        android:layout_height       = "wrap_content"
+        android:layout_marginTop    = "25dp"
+        android:layout_gravity      = "center_horizontal"
+        android:text                = "HASIL"
+        android:textStyle           = "bold"
+        android:textSize            = "20dp" />
+
+</LinearLayout>
